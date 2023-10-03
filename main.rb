@@ -10,9 +10,12 @@
 
 # Challenge 1
 # Write a method or function that accepts a string. The method or function should return a boolean that describes whether or not the string has an even number of characters.
-def str(x)
-    if x.length    
+def string_even_length?(str)
+    str.length % 2 == 0
 end
+
+p string_even_length?("Michael")
+p string_even_length?("Alison")
 # Challenge 2
 # Start with an array of strings. Then, print only the words with more than 3 characters.
 
@@ -23,4 +26,5 @@ end
 # Start with an array of strings. Print all of the words in the array, that include the letter t or T.
 
 # Challenge 5
-# Write a method or function that accepts an array of 10 integers (between 0 and 9) and returns a string of those numbers in the form of a phone number. For example, if you were given [5, 5, 5, 1, 2, 3, 4, 5, 6, 7], the method or function will return 555-123-4567.
+# Write a method or function that accepts an array of 10 integers (between 0 and 9) and returns a string of those numbers in the form of a phone number. For example, if you were given [5, 5, 5, 1, 2, 3, 4, 5, 6, 7], 
+# the method or function will return 555-123-4567.
