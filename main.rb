@@ -50,8 +50,15 @@ end
 num_array = [12.5, 8, 3.7, 16.89, 20, 30]
 result = average_array(num_array)
 p result
+
 # Challenge 4
 # Start with an array of strings. Print all of the words in the array, that include the letter t or T.
+strings_array = %w[michael ali tim Tom rich Rachel]
+strings_array.each do |x|
+    if x.include?("t") || x.include?("T")
+        p x
+    end 
+end 
 
 # Challenge 5
 # Write a method or function that accepts an array of 10 integers (between 0 and 9) and returns a string of those numbers in the form of a phone number. For example, if you were given [5, 5, 5, 1, 2, 3, 4, 5, 6, 7], 
