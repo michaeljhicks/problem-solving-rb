@@ -63,3 +63,19 @@ end
 # Challenge 5
 # Write a method or function that accepts an array of 10 integers (between 0 and 9) and returns a string of those numbers in the form of a phone number. For example, if you were given [5, 5, 5, 1, 2, 3, 4, 5, 6, 7], 
 # the method or function will return 555-123-4567.
+
+def phone_number_format(numbers)
+    if numbers.length == 10 && numbers.all? { |num| num.between?(0,9) }
+        area_code = numbers[0..2].join('')        
+        first_three = numbers[3..5].join('')
+        line_number = numbers[6..9].join('')
+
+        return "#{area_code}-#{first_three}-#{line_number}"
+    else 
+        return "Please enter your full number, including the area code"
+    end     
+end
+
+phone_num = [5,0,5,9,0,3,9,6,8,9]
+formatted_number = phone_number_format(phone_num)
+p formatted_number
