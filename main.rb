@@ -30,7 +30,26 @@ end
 
 # Challenge 3
 # Write a method or function that takes an array of numbers as an argument.  The method or function should return the average of all the numbers, rounded to two decimal places.
+def average_array(numbers)
+    if numbers.empty?
+        return 0.00
+    else
+        sum = 0
+        numbers.each do |num|
+            sum += num
+        end
 
+        average = sum / numbers.length 
+
+        rounded_avg = average.round(2)
+
+        return rounded_avg
+    end
+end 
+
+num_array = [12.5, 8, 3.7, 16.89, 20, 30]
+result = average_array(num_array)
+p result
 # Challenge 4
 # Start with an array of strings. Print all of the words in the array, that include the letter t or T.
 
