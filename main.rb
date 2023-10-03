@@ -16,8 +16,17 @@ end
 
 p string_even_length?("Michael")
 p string_even_length?("Alison")
+
+
 # Challenge 2
 # Start with an array of strings. Then, print only the words with more than 3 characters.
+words = %w[cat dog mouse bird lizard]
+
+words.each do |word|
+    if word.length > 3
+        p word 
+    end 
+end 
 
 # Challenge 3
 # Write a method or function that takes an array of numbers as an argument.  The method or function should return the average of all the numbers, rounded to two decimal places.
